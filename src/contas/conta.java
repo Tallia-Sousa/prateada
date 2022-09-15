@@ -25,7 +25,6 @@ public class conta {
     public double getSaldo() {
         return saldo;
     }
-
     public cliente getCliente() {
         return cliente;
     }

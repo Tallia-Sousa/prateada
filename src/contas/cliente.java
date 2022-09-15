@@ -8,9 +8,7 @@ public class cliente {
 
     public cliente(String nome){
         this.nome = nome;
-
     }
-
     public String getNome() {
         return nome;
     }

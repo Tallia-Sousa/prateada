@@ -8,6 +8,7 @@ public class testconta {
          conta contapoupanca = new conta(51,234, Cliente);
 
          contapoupanca.Depositar(2345);
+         contapoupanca.setNumero(56);
 
          System.out.println(contapoupanca);
 
