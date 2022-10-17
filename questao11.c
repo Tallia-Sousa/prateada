@@ -5,7 +5,7 @@ int negativos(int n, float*vet){
   while(i < n){
     i++;
     if(vet[i]<0){
-      numero = numero + 1;
+      numero++;
     }
   }
   return numero;
