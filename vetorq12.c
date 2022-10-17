@@ -5,7 +5,7 @@ int numerospares(int n, int *vet){
     while (i < n){
         i++;
         if((vet[i] % 2) == 0){
-            numeros = numeros + 1;
+            numeros++;
         }
     
     }
