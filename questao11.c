@@ -1,26 +1,27 @@
+
 #include <stdio.h>
+#define Max 50
 int negativos(int n, float*vet){
-  int numero = 0;
-  int i = 0;
-  while(i < n){
-    i++;
-    if(vet[i]<0){
-      numero++;
+  int i,neg= 0;
+  for( i = 0; i < n; i++){
+   if(vet[i] < 0){
+      neg++; //contador de numeros negativos
+   }
+      
     }
-  }
-  return numero;
+    return neg;
 }
-int main(){
-  int j;
-  float vetor[3];
-  printf("Digite os numeros \n");
-  for(j = 0; j < 3; j++){
-    scanf("%f",&vetor[j]);
-  }
-    while(j > 3){
-    j++;
-    printf("%2.f\n", vetor[j]);
-    }
-  printf("\n %d  número(s) negativo (s) ", negativos(3, vetor));
+   int main(){
+  
+   float vetor[Max];
+   int n;
+  printf("quantos elementos vc quer testar? não exceda a quantidade definida: 50[]\n");
+  scanf("%d", &n);
+printf("digite %d elemento(s)\n", n);
+  for(int j= 0; j < n; j++){
+   scanf("%f",&vetor[j]);
+
+}
+printf("%d negativo(s)",negativos(n, vetor));
   return 0;
-}
+  }
