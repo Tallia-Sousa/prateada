@@ -18,7 +18,7 @@ int main()
     int n;
     
     
-    printf("quantos elementos vc deseja testar, não exceda o numero maximo definido[50]!\n ");
+    printf("quantos elementos vc deseja testar ? , não exceda o numero maximo definido[50]!\n ");
     scanf("%d", &n);
     printf("entra com %d elemento(s)\n", n);
     for(int i = 0; i < n; i++ ){
